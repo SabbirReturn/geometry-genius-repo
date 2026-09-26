@@ -9,7 +9,7 @@
 </head>
 <body class="m-4">
     <header class="bg-slate-400 rounded-lg">
-        <section class="flex justify-between items-center px-5 h-15">
+        <section class="flex justify-between items-center px-4 sm:px-5 min-h-15">
             <section>
                 <h1>Interactive</h1>
                 <p>Geometry Genius</p>
@@ -21,13 +21,13 @@
     </header>
     <main>
         <!-- calculate and result section -->
-        <section class=" sm:mb-5 lg:flex md:flex md:gap-5 lg:gap-5 ">
+        <section class=" flex flex-col lg:flex-row gap-5 mb-5 ">
             <!-- calculate section -->
-            <section class="grid grid-cols-3 gap-5 p-2 w-auto border-2">
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-2 border-2 w-full lg:flex-1">
 
             <!-- Triangle -->
 
-                <div class="card bg-base-100  shadow-sm bg-[#FBBCED] w-auto">
+                <div class="card bg-base-100  shadow-sm bg-[#FBBCED] w-full">
                     <figure class="px-10 pt-10">
                         <img
                             src="images/triangle.png"
@@ -38,55 +38,55 @@
                         <h2 class="card-title">Triangle</h2>
                         <p>Area (A) = 0.5 * b * h</p>
                         <div class="flex items-center justify-between">
-                            <input class="w-7 md:w-10 lg:w-10"  type="number" name="" id="">
+                            <input  class="w-7 md:w-10 lg:w-10"  type="number" name="" id="triangleFirstInput">
                             <span class="ml-2 mr-2">cm</span>
-                            <input class="w-7 md:w-10 lg:w-10" type="number" name="" id="">
+                            <input class="w-7 md:w-10 lg:w-10" type="number" name="" id="triangleSecondInput">
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Calculate</button>
+                            <button id="triangleCalculate" class="btn btn-primary">Calculate</button>
                         </div>
                     </div>
                 </div>
 
             <!-- Rectangle -->
 
-                <div class="card bg-base-100  shadow-sm bg-[#FBBCED] w-auto">
+                <div class="card bg-base-100  shadow-sm bg-[#FBBCED] w-full">
                     <figure class="px-10 pt-10">
                         <img
-                            src="images/triangle.png"
-                            alt="triangle"
+                            src="images/rectangle.png"
+                            alt="Rectangle"
                             class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Triangle</h2>
-                        <p>Area (A) = 0.5 * b * h</p>
+                        <h2 class="card-title">Rectangle</h2>
+                        <p>Area (A) =  w * l</p>
                         <div class="flex items-center justify-between">
-                            <input class="w-7 md:w-10 lg:w-10"  type="number" name="" id="">
+                            <input class="w-7 md:w-10 lg:w-10 placeholder:text-center"  type="number" name="" id="rectangleFirstInput" placeholder="w">
                             <span class="ml-2 mr-2">cm</span>
-                            <input class="w-7 md:w-10 lg:w-10" type="number" name="" id="">
+                            <input class="w-7 md:w-10 lg:w-10 placeholder:text-center" type="number" name="" id="rectangleSecondInput" placeholder="l">
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Calculate</button>
+                            <button id="rectangleCalculate" class="btn btn-primary">Calculate</button>
                         </div>
                     </div>
                 </div>
 
             <!-- Parallelogram -->
 
-                <div class="card bg-base-100  shadow-sm bg-[#FBBCED] w-auto">
+                <div class="card bg-base-100  shadow-sm bg-[#FBBCED] w-full">
                     <figure class="px-10 pt-10">
                         <img
-                            src="images/triangle.png"
-                            alt="triangle"
+                            src="images/parallelogram.png"
+                            alt="parallelogram"
                             class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Triangle</h2>
-                        <p>Area (A) = 0.5 * b * h</p>
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area (A) = b * h</p>
                         <div class="flex items-center justify-between">
-                            <input class="w-7 md:w-10 lg:w-10"  type="number" name="" id="">
+                            <input class="w-7 md:w-10 lg:w-10 placeholder:text-center"  type="number" name="" id="" placeholder="b">
                             <span class="ml-2 mr-2">cm</span>
-                            <input class="w-7 md:w-10 lg:w-10" type="number" name="" id="">
+                            <input class="w-7 md:w-10 lg:w-10 placeholder:text-center" type="number" name="" id="" placeholder="h">
                         </div>
                         <div class="card-actions">
                             <button class="btn btn-primary">Calculate</button>
@@ -96,20 +96,20 @@
 
             <!-- Rhombus -->
 
-                <div class="card bg-base-100  shadow-sm bg-[#FBBCED] w-auto">
+                <div class="card bg-base-100  shadow-sm bg-[#FBBCED] w-full">
                     <figure class="px-10 pt-10">
                         <img
-                            src="images/triangle.png"
-                            alt="triangle"
+                            src="images/rhombus.png"
+                            alt="rhombus"
                             class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Triangle</h2>
-                        <p>Area (A) = 0.5 * b * h</p>
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
                         <div class="flex items-center justify-between">
-                            <input class="w-7 md:w-10 lg:w-10"  type="number" name="" id="">
+                            <input class="w-7 md:w-10 lg:w-10 placeholder:text-center"  type="number" name="" id="" placeholder="d₁">
                             <span class="ml-2 mr-2">cm</span>
-                            <input class="w-7 md:w-10 lg:w-10" type="number" name="" id="">
+                            <input class="w-7 md:w-10 lg:w-10 placeholder:text-center" type="number" name="" id="" placeholder="d2">
                         </div>
                         <div class="card-actions">
                             <button class="btn btn-primary">Calculate</button>
@@ -118,20 +118,20 @@
                 </div>
 
             <!-- Pentagon -->
-                <div class="card bg-base-100  shadow-sm bg-[#FBBCED] w-auto">
+                <div class="card bg-base-100  shadow-sm bg-[#FBBCED] w-full">
                     <figure class="px-10 pt-10">
                         <img
-                            src="images/triangle.png"
-                            alt="triangle"
+                            src="images/pentagon.png"
+                            alt="pentagon"
                             class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Triangle</h2>
-                        <p>Area (A) = 0.5 * b * h</p>
+                        <h2 class="card-title">Pentagon</h2>
+                        <p>Area (A) = 0.5 * p * b</p>
                         <div class="flex items-center justify-between">
-                            <input class="w-7 md:w-10 lg:w-10"  type="number" name="" id="">
+                            <input class="w-7 md:w-10 lg:w-10 placeholder:text-center"  type="number" name="" id="" placeholder="p">
                             <span class="ml-2 mr-2">cm</span>
-                            <input class="w-7 md:w-10 lg:w-10" type="number" name="" id="">
+                            <input class="w-7 md:w-10 lg:w-10 placeholder:text-center" type="number" name="" id="" placeholder="b">
                         </div>
                         <div class="card-actions">
                             <button class="btn btn-primary">Calculate</button>
@@ -140,20 +140,20 @@
                 </div>
 
             <!-- Ellipse  -->
-                <div class="card bg-base-100  shadow-sm bg-[#FBBCED] w-auto">
+                <div class="card bg-base-100  shadow-sm bg-[#FBBCED] w-full">
                     <figure class="px-10 pt-10">
                         <img
-                            src="images/triangle.png"
-                            alt="triangle"
+                            src="images/ellipse.png"
+                            alt="ellipse"
                             class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Triangle</h2>
+                        <h2 class="card-title">Ellipse</h2>
                         <p>Area (A) = 0.5 * b * h</p>
                         <div class="flex items-center justify-between">
-                            <input class="w-7 md:w-10 lg:w-10"  type="number" name="" id="">
+                            <input class="w-7 md:w-10 lg:w-10 placeholder:text-center"  type="number" name="" id="" placeholder="a">
                             <span class="ml-2 mr-2">cm</span>
-                            <input class="w-7 md:w-10 lg:w-10" type="number" name="" id="">
+                            <input class="w-7 md:w-10 lg:w-10 placeholder:text-center" type="number" name="" id="" placeholder="b">
                         </div>
                         <div class="card-actions">
                             <button class="btn btn-primary">Calculate</button>
@@ -162,10 +162,20 @@
                 </div>
                 
             </section>
-            <section class="w-auto  flex text-center border-2 p-2">
-                <h1>Area calculation</h1>
+
+            <!-- Result section -->
+            <section class="w-full lg:w-72 border-2 p-4 ">
+                <section class="text-center underline whitespace-nowrap">
+                    <h1 class="">Area calculation</h1>
+                </section>
+                <section id="result">
+                    
+
+                </section>
             </section>
         </section>
     </main>
+
+    <script src="scrips/index.js"></script>
 </body>
 </html>
