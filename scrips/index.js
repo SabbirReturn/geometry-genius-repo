@@ -4,15 +4,26 @@ for(let btn of btns){
     btn.style.border = 'none'
 }
 
+function getInputValue(id){
+    let accessValue = document.getElementById(id)
+    let value = accessValue.value;
+    return value
+}
+
 // let triangleCalculateValue = ''
 let calculateValue = document.getElementById('result')
 
 
 let triangleCalculate = document.getElementById('triangleCalculate');
 triangleCalculate.addEventListener('click', function(){
-    let triangleFirstInput = document.getElementById('triangleFirstInput');
-    let triangleSecondInput = document.getElementById('triangleSecondInput');
-    let triangleCalculateValue = 0.5 * triangleFirstInput.value * triangleSecondInput.value;
+    // let triangleFirstInput = document.getElementById('triangleFirstInput');
+    // let triangleSecondInput = document.getElementById('triangleSecondInput');
+    // let triangleCalculateValue = 0.5 * triangleFirstInput.value * triangleSecondInput.value;
+    let triangleFirstInput = getInputValue('triangleFirstInput')
+    let triangleSecondInput = getInputValue('triangleSecondInput')
+
+    let triangleCalculateValue = 0.5 * triangleFirstInput * triangleSecondInput;
+    console.log(triangleCalculateValue)
     
     let p = document.createElement('p');
     p.innerHTML = `
