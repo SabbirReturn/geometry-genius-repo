@@ -35,3 +35,65 @@ document.getElementById('rectangleCalculate').addEventListener('click', function
     calculateValue.appendChild(p);
     
 })
+
+// Parallelogram 
+
+document.getElementById('parallelogramCalculate').addEventListener('click', function(){
+    let parallelogramFirstInput = document.getElementById('parallelogramFirstInput');
+
+    let parallelogramSecondInput = document.getElementById('parallelogramSecondInput');
+    let parallelogramCalculateValue = parallelogramFirstInput.value * parallelogramSecondInput.value;
+
+    let p = document.createElement('p');
+    p.innerHTML = `
+        <p>Parallelogram Value:${parallelogramCalculateValue}</p>
+
+    `
+    calculateValue.appendChild(p);
+})
+
+// Rhombus
+document.getElementById('rhombusCalculate').addEventListener('click', function(){
+    let rhombusFirstInput = document.getElementById('rhombusFirstInput')
+    let rhombusSecondInput = document.getElementById('rhombusSecondInput');
+    let rhombusCalculateValue = 0.5 * rhombusFirstInput.value * rhombusSecondInput.value;
+
+    let p = document.createElement('p');
+    p.innerHTML = `
+        <p>Rhombus Value:${rhombusCalculateValue}</p>
+
+    `
+    calculateValue.appendChild(p);
+})
+
+
+// Pentagon
+
+document.getElementById('pentagonCalculate').addEventListener('click', function(){
+    let pentagonFirstInput = document.getElementById('pentagonFirstInput');
+    let pentagonSecondInput = document.getElementById('pentagonSecondInput');
+
+    let pentagonCalculateValue = 0.5 * pentagonFirstInput.value * pentagonSecondInput.value;
+
+    let p = document.createElement('p');
+    p.innerHTML = `
+        <p>Pentagon Value:${pentagonCalculateValue}</p>
+
+    `
+    calculateValue.appendChild(p);
+})
+
+
+// Ellipse
+document.getElementById('ellipseCalculate').addEventListener('click', ()=>{
+    let ellipseFirstInput = document.getElementById('ellipseFirstInput');
+    let ellipseSecondInput = document.getElementById('ellipseSecondInput');
+    let ellipseCalculateValue = 0.5 * ellipseFirstInput.value * ellipseSecondInput.value;
+
+    let p = document.createElement('p');
+    p.innerHTML = `
+        <p>Ellipse Value:${ellipseCalculateValue}</p>
+
+    `
+    calculateValue.appendChild(p);
+})
