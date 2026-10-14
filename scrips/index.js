@@ -16,9 +16,6 @@ let calculateValue = document.getElementById('result')
 
 let triangleCalculate = document.getElementById('triangleCalculate');
 triangleCalculate.addEventListener('click', function(){
-    // let triangleFirstInput = document.getElementById('triangleFirstInput');
-    // let triangleSecondInput = document.getElementById('triangleSecondInput');
-    // let triangleCalculateValue = 0.5 * triangleFirstInput.value * triangleSecondInput.value;
     let triangleFirstInput = getInputValue('triangleFirstInput')
     let triangleSecondInput = getInputValue('triangleSecondInput')
 
@@ -43,6 +40,7 @@ document.getElementById('rectangleCalculate').addEventListener('click', function
         <p>Rectangle Value:${rectangleCalculateValue}</p>
 
     `
+    // calculateValue.appendChild(p);
     calculateValue.appendChild(p);
     
 })
